@@ -9,8 +9,9 @@
     --main-font: "Merriweather Sans", sans-serif;
     --secondary-font: "Merriweather" ;
     --primary-font-color: #212529;
-    --orange-color: #f4623a;
+    --orange-color: rgb(244, 98, 58);
     --faded-white: rgba(255, 255, 255, 0.75);
+    --gray-color: #6C757D;
 }
 
 body {
@@ -460,6 +461,10 @@ h2{
     margin-top: calc( var(--spacer) * 12 );
 }
 
+.mt-17 {
+    margin-top: calc( var(--spacer) * 17 );
+}
+
 /*margin bottom*/
 .mb-0 {
     margin-bottom: 0px;
@@ -728,6 +733,10 @@ h2{
 
 .tc-white{
     color: #fff;
+}
+
+.tc-gray{
+    color: var(--gray-color);
 }
 
 /*shadow*/

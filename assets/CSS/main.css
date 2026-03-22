@@ -27,11 +27,40 @@
     max-width: 700px;
 }
 
-/*get started section*/
+/*about section*/
 .about-content{
     max-width: 700px;
 }
 .about-section {
     --divider-color: white;
     padding: 95px 0px;
+}
+
+/*services section*/
+.services-section .service {
+    flex: 1 1 calc(25% - 25px);
+}
+
+.service h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.service p{
+    color: #6C757D;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+@media (max-width: 991px) {
+    .services-section .service {
+        flex: 1 1 calc(50% - 25px);
+    }
+}
+
+@media (max-width: 767px) {
+    .services-section .service {
+        flex: 1 1 100%;
+    }
 }
