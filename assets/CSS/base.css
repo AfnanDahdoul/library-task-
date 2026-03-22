@@ -45,9 +45,31 @@ p{
     font-family: var(--secondary-font);
 }
 
+h1,
+h2{
+    position: relative;
+}
+
 /*display: flex*/
 .d-flex {
     display: flex;
+}
+
+/*flex direction*/
+.f-direction-column{
+    flex-direction: column;
+}
+
+.f-direction-columnReverse{
+    flex-direction: column-reverse;
+}
+
+.f-direction-row{
+    flex-direction: row;
+}
+
+.f-direction-rowReverse{
+    flex-direction: row-reverse;
 }
 
 /*warp*/
@@ -186,6 +208,7 @@ p{
     padding-top: calc( var(--spacer) * 18 );
 }
 
+
 /*padding bottom*/
 .pb-0 {
     padding-bottom: 0px;
@@ -307,6 +330,11 @@ p{
 .py-6 {
     padding-top: calc( var(--spacer) * 6 );
     padding-bottom: calc( var(--spacer) * 6 );
+}
+
+.py-25{
+    padding-top: calc( var(--spacer) * 25 );
+    padding-bottom: calc( var(--spacer) * 25 );
 }
 
 /*padding left and right*/
@@ -757,7 +785,7 @@ p{
 
 /*height*/
 .vh-100 {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /*position*/
@@ -781,6 +809,7 @@ p{
     background-color: antiquewhite;
 }
 
+/*laer over the hero section */
 .layer {
     position: absolute;
     inset: 0;
@@ -800,10 +829,43 @@ button {
     border: none;
     border-radius: 29px;
 }
+
+/*making line under h1 and h2*/
+.section-title {
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--divider-color, #f4623a);
+    margin: 20px auto 0;;
+    position: absolute;
+    left: 50%;
+    bottom: -29px;
+    transform: translateX(-50%);
+}
 /*responsive design*/
 /*resposive header*/
 @media screen and (min-width:0px) and (max-width:991px) {
     nav .d-flex {
         display: none;
+    }
+
+    header .py-5{
+        padding: 15px 0px;
+    }
+}
+/*resposive hero*/
+@media screen and (min-width:361px) and (max-width:674px) {
+    .hero-details h1{
+        font-size: 45px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:360px) {
+    .hero-details h1{
+        font-size: 35px;
     }
 }

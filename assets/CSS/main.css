@@ -27,22 +27,11 @@
     max-width: 700px;
 }
 
-h1 {
-    position: relative;
+/*get started section*/
+.about-content{
+    max-width: 700px;
 }
-
-h1::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 3px;
-    background-color: var(--orange-color);
-    position: absolute;
-    left: 50%;
-    bottom: -29px;
-    transform: translateX(-50%);
-}
-.ran {
-    height: 900px;
-    background-color: rebeccapurple;
+.about-section {
+    --divider-color: white;
+    padding: 95px 0px;
 }
