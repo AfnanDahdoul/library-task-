@@ -1,11 +1,13 @@
 /*header*/
+#header{
+    width: 100%;
+    z-index: 10;
+}
 .burger-menu{
     display: none;
     width: 50px;
     height: 44px;
 }
-
-
 
 /*responsive for header*/
 @media screen and (min-width:0px) and (max-width:991px)   {
@@ -14,8 +16,33 @@
     }
 }
 
-/* .hero-section{
+/*hero section*/
+.hero-section{
     background-image: url(./../imgs/hero-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-} */
+} 
+
+.hero-details {
+    max-width: 700px;
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--orange-color);
+    position: absolute;
+    left: 50%;
+    bottom: -29px;
+    transform: translateX(-50%);
+}
+.ran {
+    height: 900px;
+    background-color: rebeccapurple;
+}
