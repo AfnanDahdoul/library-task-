@@ -14,8 +14,16 @@
     --gray-color: #6C757D;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--main-font);
+}
+
+section {
+    scroll-margin-top: 75.6px;
 }
 
 .container {
@@ -332,6 +340,21 @@ h2 {
 .py-6 {
     padding-top: calc(var(--spacer) * 6);
     padding-bottom: calc(var(--spacer) * 6);
+}
+
+.py-7 {
+    padding-top: calc(var(--spacer) * 7);
+    padding-bottom: calc(var(--spacer) * 7);
+}
+
+.py-8 {
+    padding-top: calc(var(--spacer) * 8);
+    padding-bottom: calc(var(--spacer) * 8);
+}
+
+.py-9 {
+    padding-top: calc(var(--spacer) * 9);
+    padding-bottom: calc(var(--spacer) * 9);
 }
 
 .py-25 {
@@ -872,6 +895,14 @@ h2 {
 
 .bg-white {
     background-color: #fff;
+}
+
+.bg-gray{
+    background-color: var(--gray-color);
+}
+
+.bg-light-gray{
+    background-color: rgba(248, 249, 250, 1);
 }
 
 .bg-orange {
