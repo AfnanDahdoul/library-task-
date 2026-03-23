@@ -22,14 +22,7 @@
     background-size: cover;
 } 
 
-.hero-details {
-    max-width: 700px;
-}
-
 /*about section*/
-.about-content{
-    max-width: 700px;
-}
 .about-section {
     --divider-color: white;
     padding: 95px 0px;
@@ -104,3 +97,30 @@
     }
 }
 
+/*conatct section*/
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f4623a;
+    box-shadow: 0 0 0 3px rgba(244, 98, 58, 0.25);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-submit:disabled {
+    background-color: #f8b6a3;
+    cursor: not-allowed;
+}

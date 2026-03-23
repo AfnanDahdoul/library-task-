@@ -960,6 +960,47 @@ h2 {
     width: 100%;
 }
 
+/*max-width*/
+.mw-100{
+    max-width: 100px;
+}
+
+.mw-200{
+    max-width: 200px;
+}
+
+.mw-300{
+    max-width: 300px;
+}
+
+.mw-400{
+    max-width: 400px;
+}
+
+.mw-500{
+    max-width: 500px;
+}
+
+.mw-600{
+    max-width: 600px;
+}
+
+.mw-700{
+    max-width: 700px;
+}
+
+.mw-800{
+    max-width: 800px;
+}
+
+.mw-900{
+    max-width: 900px;
+}
+
+.mw-1000{
+    max-width: 1000px;
+}
+
 /*height*/
 .vh-100 {
     min-height: 100vh;
@@ -1005,6 +1046,26 @@ button {
     padding: 20px 35px;
     border: none;
     border-radius: 29px;
+}
+
+.btn-orange {
+    background-color: #f4623a;
+    transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+    cursor: pointer;
+    background-color: #e5532d;
+}
+
+.btn-white {
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.btn-white:hover {
+    cursor: pointer;
+    background-color: #e2e6ea;
 }
 
 /*making line under h1 and h2*/
