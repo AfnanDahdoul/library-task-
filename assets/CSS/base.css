@@ -878,6 +878,10 @@ h2 {
     background-color: var(--orange-color);
 }
 
+.bg-dark{
+    background-color: var(--primary-font-color);
+}
+
 /*text-color*/
 .tc-sucess {
     color: green;
@@ -995,7 +999,7 @@ h2 {
 }
 
 button {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     padding: 20px 35px;
